@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    
+}
+body{
+    background-color: #03261E;
+}
+.tela_login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 250px;
+    background-color: #004038;
+    border-radius: 7px;
+}
+
+
+#titulo{
+    text-shadow: 
+    -1px -1px #000,
+    -1px 1px #000,
+    1px 1px #000,
+    1px -1px #000;
+    color: #00FF71;
+    font-weight: 800;
+    font-size: 19pt;
+    margin: 3px 0px 3px 0px;
+}
+#nome{
+    background-color: #156D5E;
+    height: 28px;
+    width: 85%;
+    border-radius: 4px;
+    text-indent: 5px;
+    font-weight: 600;
+    font-size: 12pt;
+    margin: 5px 0px 5px 0px;
+    text-shadow: 
+    -1px -1px #000,
+    -1px 1px #000,
+    1px 1px #000,
+    1px -1px #000;
+    color: white;
+}
+#nome::placeholder{
+    color: white;
+}
+#nome:hover{
+    outline: 2px solid #00FF71;
+}
+#btn_login{
+    width: 85%;
+    height: 20px;
+    border-radius: 4px;
+    font-size: 10pt;
+    font-weight: 600;
+    background-color: #00FF9B;
+    margin: 5px 0px 10px 0px;
+}
+.geral{
+    display: none;
+}
+.conteudo{
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#texto{
+    padding: 6px 0px 0px 10px;
+    text-shadow: 
+    -1px -1px #000,
+    -1px 1px #000,
+    1px 1px #000,
+    1px -1px #000;
+    color: white;
+    font-size: 12pt;
+    font-weight: 550;
+    width: 85%;
+    height: 35px;
+    margin: 3px;
+    border-radius: 5px;
+    background-color: #00463B;
+    resize: none;
+}
+#texto::placeholder{
+    color: white;
+    font-weight: 450;
+}
+#enviar{
+    width: 25px;
+    margin-right: 4px;
+    
+}
+#img_enviar:hover{
+    background-color: #00C169;
+}
+#img_enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+    background-color: #007B54;
+    border-radius: 15px;
+}
+#notific{
+    color: black;
+    display: none;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#notific_msg{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 230px;
+    background-color: red;
+    text-align: center;
+    font-size: 11pt;
+    font-weight: 860;
+    font-family: fantasy;
+    border-radius: 9px;
+    background-color: rgba(9, 20, 32, 0.4);
+    animation: subir 2s linear;
+}
+
+@keyframes subir{
+    from{
+        bottom: 270px;
+        background-color: rgba(9, 20, 32, 0.4);
+    }
+    to{
+        bottom: 500px;
+        background-color: rgba(9, 20, 32, 0.0);
+    }
+    
+}
+.tela_mensagens{
+    padding: 10px 10px 45px;
+    justify-content: flex-end;
+    text-shadow: 
+    -1px -1px #000,
+    -1px 1px #000,
+    1px 1px #000,
+    1px -1px #000;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    /*height: 100%;*/
+    width: 100%;
+    flex-grow: 1;
+}
+.minha_mensagem{
+    
+    padding: 4px;
+    right: 0;
+    width: 100%;
+    max-width: 260px;
+    border-radius: 7px 7px 0px 7px;
+    background-color: #004637;
+    font-size: 14pt;
+    font-weight: 550;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    line-height: 20px;
+    align-self: flex-end;
+}
+#msg{
+    margin: 5px 5px 5px 10px;
+}
+
+.mensagem_alheia{
+    padding: 4px;
+    right: 0;
+    width: 100%;
+    max-width: 260px;
+    border-radius: 0px 7px 7px 7px;
+    background-color: #223A3B;
+    font-size: 14pt;
+    font-weight: 550;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    line-height: 20px;
+    align-self: flex-start;
+    display: block;
+}
+#nome_alheio{
+    font-size: 12pt;
+    
+    color: #00FFBA;
+    display: flex;
+    align-items: center;
+    margin: 5px 5px 5px 3px;
+    text-indent: 7px;
+    border-radius: 0px 5px 5px 5px;
+}
+#tempo{
+    font-size: 11pt;
+    color: #00FFBA;
+    margin: 5px 5px 5px 3px;
+    text-indent: 7px;
+    border-radius: 0px 5px 5px 5px;
+}
